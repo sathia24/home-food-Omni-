@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+.header-part{
+    background-color: #ffe4c4;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+.nav-logo-part img{
+    width: 200px;
+    
+}
+.nav-link a{
+    text-decoration: none;
+    margin-right: 30px;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+.nav-link{
+justify-content: center;
+display: flex;
+align-items: center;
+}
+.nav-link .link-btn{
+    background-color: orangered;
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff
+    ;
+}
+.hero-section{
+    display: flex;
+}
+.grid-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid-img::before, .grid-img::after{
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    content: "";
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+
+
+}
+.grid-img::before{
+    width: 300px;
+    height: 300px;
+    background-color: pink;
+  
+}
+.grid-img::after{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+.grid-img img{
+    width: 30%;
+    z-index: 2;
+    
+}
+.grid-img{
+    position: relative;
+}
